@@ -130,7 +130,7 @@ export type V2 = z.infer<typeof v2>
  *
  * @category Typings
  */
-export type BackfilledV2 = V1 & V2
+export type BackfilledV2 = z.infer<typeof backfilledV2>
 
 /**
  * A valid Character Book object following the V2 spec.
@@ -599,3 +599,9 @@ export const v2 = z.object({
     }),
   ),
 })
+
+/**
+ * Same as {@link v2}, but specifically checks that the card also contains v1
+ * fields backfilled. See typing {@link BackfilledV2}
+ */
+export const backfilledV2 = v1.merge(v2)
