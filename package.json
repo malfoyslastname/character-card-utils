@@ -1,6 +1,6 @@
 {
   "name": "character-card-utils",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Parsers, validators, and converters for chatbot character cards following the V2 spec (https://github.com/malfoyslastname/character-card-spec-v2)",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
